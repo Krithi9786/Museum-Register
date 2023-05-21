@@ -1,0 +1,89 @@
+<!-- <head>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="box box1">This box uses opacity</div>
+    </div>
+</body> -->
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <!-- <title> Responsive Contact Us Form  | CodingLab </title>-->
+    <link rel="stylesheet" href="contact.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <!-- <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Surkhet, NP12</div>
+          <div class="text-two">Birendranagar 06</div>
+        </div> -->
+        <!-- <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+91 9344960429</div>
+          <div class="text-two">+91 9876586743</div>
+        </div> -->
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">museummanagement@gmail.com</div>
+          <div class="text-two">mms@gmail.com</div>
+        </div>
+      </div>  
+      <div class="right-side"><br><br><br>
+        <div class="topic-text" style="font-size: 40px;">Facing Any Difficulties???</div><br><br><br><br><br><br>
+        <p>If you have any  quries or difficulty related to this website, you can kindly notify us through message.</p><br>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" name="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          <textarea rows="5" cols="33" id="msg" name="msg" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="button">
+          <center><input type="button" onclick="sendEmail()" value="Send Now" ></center>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script type="text/javascript">
+    var nm = document.getElementById("name");
+    var e = document.getElementById("email");
+    function sendEmail(){
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: nm,
+        Password: "Enter your password",
+        To: 'swathis.20it@kongu.edu',
+        From: e,
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+
+  </script>
+</body>
+</html>

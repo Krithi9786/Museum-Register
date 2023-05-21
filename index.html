@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>CSS Navigation</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+    *{
+    margin:0;
+    padding:0;
+    font-family:verdana;
+  }
+  #abc{
+    width:100%;
+    height:100vh;
+    background-image: url(img2.jpg);
+    background-size: cover;
+  }
+  nav{
+    width: 100%;
+    height: 50px;
+    background-color: #0005;
+    line-height: 50px;
+  }
+  nav ul{
+    float: left;
+    margin-right: 30px;
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+  }
+  nav ul li:hover{
+    background-color:#088;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+  }
+   body{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/702/941/283/natural-history-museum-london-wallpaper-preview.jpg");
+   background-size: 1700px 850px ;
+    background-repeat: no-repeat;
+
+  } 
+</style>
+</head>
+<body>
+<div id="abc">
+    <nav>
+        <ul>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Home</a></li>
+            
+            <li><a href="booking.html">Book Tickets</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>

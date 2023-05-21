@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+ 
+  <!-- jQuery CDN Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Transparent form</title>
+</head>
+ 
+<body>
+    <div class="container">
+<!--        
+    <div id="abc">
+        <nav>
+            <ul>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Airways</a></li>
+                <li><a href="#">Book Tickets</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div> -->
+    <div class="form" style="float:left">
+      <div class="btn">
+        <button class="signUpBtn">SIGN UP</button>
+    
+      </div>
+      <form class="signUp" action="http://localhost:2222/index1" method="post">
+        <div class="formGroup">
+          <input type="text" id="name" name="name" placeholder="User Name" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="email" id="email" placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" name="password" placeholder="Password" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">I agree with term & conditions</span>
+        </div>
+        <div class="formGroup">
+          <button type="submit" class="btn2">REGISTER</button>
+        </div>
+ 
+      </form>
+ 
+        
+    
+ 
+    </div>
+  </div>
+ 
+  <script src="jQuery.js"></script>
+</body>
+ 
+</html>

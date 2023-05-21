@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+<link rel="stylesheet" href="style.css">
+    <style>
+        legend {
+    background-color: #000;   
+    color: #fff;
+    padding: 3px 6px;
+  }
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #05c46b;
+            font-family: Verdana;
+            text-align: center;
+            background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFRUVFRcXFxcXFxUVFRUWFhUXFxcYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAFxABAQEBAAAAAAAAAAAAAAAAABEBgf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDjKAAUAUABUAUQAVFAWgAIAuKgAIoIoAFEBRAFwAAABUNA1nVQDdFoDIAAAAACooAAKhoCiKCCgGAAqFAAADSoChgAABoJQaShuAUqaYC8VKAyIAogAACqgCiAKAAqAKhQAAAAAAFQSgoYACALSoA1glABFBRAGQABAFVMAUEBQAUQwFAAEAFQBaJQFEAVNDQDUAKCApQBRAFEAUSgAgABoCoAoAAALRAFABUAAAAKAAAIoCIoAAAAAUQFogCgAgAAAAAAAKIoAAFAAEUA0AAAFQBU0ABABUAUABNVAAAUSAAIAqAKAAAAAAACoACoAqACgAAAAgAAAAKlAAAAAAKAIqAAAKgCiKAAAIoAAAICqgCgAagAqACaKgBgAoigigAABQ6AgAAAIoAAAAAAAqAAAAqAKCAoAAIAAACAqoAoAAAIFAQAFQUBFAAAQAFAAAABQRUUBFAEABUAAAQVAFQBQAAQAAAABUUAAEAABQMAAAAAAAAAAAAAARQEAAAAAAAABAUQBVQBUACgAAAogAqAKAAAAAAUAAAAAEAAQBQAAAAAf//Z);
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+    
+</head>
+
+<body style="background-color:black;">
+    <div id="abc">
+        <nav>
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="booking2.html">Book Tickets</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    <form id="form" action="http://localhost:2222/booking" method="post">
+        <div class="form-control">
+        <label><span class="text-danger">*</span> Select Museum  </label>
+        <select name="museum" class="museum" id="museum"  required>
+            <option value="" >Select Museum </option>
+                
+            <option value="Chennai" data-mcode="CGM"  data-id="1" >Chennai </option>    
+                
+            <option value="Coimbatore" data-mcode="CBEGM"  data-id="2" >Coimbatore </option>    
+                
+            <option value="Cuddalore" data-mcode="CUGM"  data-id="3" >Cuddalore </option>   
+                
+            <option value="Erode" data-mcode="EGM"  data-id="4" >Erode </option>    
+                
+            <option value="Kanchipuram" data-mcode="KAGM"  data-id="5" >Kanchipuram </option>   
+                
+            <option value="Kanniyakumari" data-mcode="KANGM"  data-id="6" >Kanniyakumari </option>  
+                
+            <option value="Karur" data-mcode="KARGM"  data-id="7" >Karur </option>  
+                
+            <option value="Krishnagiri" data-mcode="KRIGM"  data-id="8" >Krishnagiri </option>  
+                
+            <option value="Madurai" data-mcode="MGM"  data-id="9" >Madurai </option>    
+                
+            <option value="Nagapattinam" data-mcode="NGM"  data-id="10" >Nagapattinam </option> 
+                
+            <option value="Palani" data-mcode="PGM"  data-id="11" >Palani </option> 
+                
+            <option value="Pudukkottai" data-mcode="PUGM"  data-id="12" >Pudukkottai </option>  
+                
+            <option value="Ramanathapuram" data-mcode="RAGM"  data-id="13" >Ramanathapuram </option>    
+                
+            <option value="Salem" data-mcode="SAGM"  data-id="14" >Salem </option>  
+                
+            <option value="Sivaganga" data-mcode="SIGM"  data-id="15" >Sivaganga </option>  
+                
+            <option value="Tirunelveli" data-mcode="TIVGM"  data-id="16" >Tirunelveli </option> 
+                
+            <option value="Tiruvarur" data-mcode="TIVAGM"  data-id="17" >Tiruvarur </option>    
+                
+            <option value="Tiruchirappalli" data-mcode="TICGM"  data-id="18" >Tiruchirappalli </option> 
+                
+            <option value="Udagamandalam" data-mcode="UGM"  data-id="19" >Udagamandalam </option>   
+                
+            <option value="Vellore" data-mcode="VGM"  data-id="20" >Vellore </option>   
+                
+            <option value="Ariyalur" data-mcode="ARI"  data-id="22" >Ariyalur </option> 
+                
+            <option value="Viruthunagar" data-mcode="VIRU"  data-id="23" >Viruthunagar </option>    
+                
+            <option value="Theni" data-mcode="THEN"  data-id="24" >Theni </option>  
+                
+            <option value="Thiruvannamalai" data-mcode="THIRU"  data-id="25" >Thiruvannamalai </option> 
+            
+            
+            
+            
+            
+            
+            
+            </select>
+        </div>
+            <br>
+            <div class="form-control">
+            <label><span class="text-danger">*</span> Visit  Date</label>
+            <input type="date"  name="datepicker"  value="" placeholder=""  class="visit-date" id="datepicker"  />
+            </div>
+            <br>
+            <div class="form-control">
+            <label><span class="text-danger">*</span> Contact Person </label>
+<input type="text"  name="cperson" id="cperson" placeholder=""  required data-rule-minlength="3"  data-msg="Please Fill Contact Person Name" value=""/>
+            </div>
+            <br>
+            <div class="form-control">
+<label><span class="text-danger">*</span> Contact Mobile  </label>
+<input type="number"  name="cmobile"  placeholder="" id="cmobile"  required data-rule-minlength="4"  data-rule-maxlength="15"  data-msg="Please Fill Contact Mobile Number" value=""/>
+            </div>
+            <br>
+            <div class="form-control">
+<label><span class="text-danger">*</span> Email Id</label>
+<input type="email"  name="email" placeholder="" id="email" value=""  required data-msg="Please Fill Email Id" />
+            </div>
+            <br>   
+            <div class="form-control">
+                <label><span class="text-danger">*</span> Nationality</label>
+<select name="nationality" id="nationality" class="nationality"  required> 
+    <option value="indian">Indian</option>
+    <option value="foreigner">Foreigner</option> </select>
+    <br> </div>
+    <div class="form-control">
+<label><i class="text-danger">*</i> No. of Adults <span class="a-rate"></span></label>
+<input  name="adult"  type="number" oninput="amt()"  class="mus-adult rate-part today_time" id="adult" value="0" placeholder="" min="1"  required   data-msg="Min 1 Person Required "}/>
+    </div>
+    <br>
+    <div class="form-control">
+    <label>No. of Children <span class="a-rate"></span> </label>
+    <input name="children" oninput="amt()" type="number" class="mus-child rate-part today_time" id="children" value="0"   placeholder="" min="0"/>
+    </div><br>
+    <div class="form-control">
+    <label> Camera <span class="a-rate"></span></label>
+    <input  name="still" oninput="amt()" type="number" class="s-cam rate-part" id="still" value="0" placeholder="" min="0" />
+    </div>
+    <br>
+    
+    <div class="form-control">
+        <div class="total"> Total Amount : <span class="total-amount"></span></div>
+        <input type="text" id="tamt" name="tamt">
+       </div>
+       <br>
+
+    <input  type="submit" value = "Book Now" data-toggle="modal" class="submit" onclick="Myth()">
+</form>
+<script type="text/javascript">
+
+    function amt(){
+    const b = document.getElementById("adult").value;
+    const d = document.getElementById("children").value;
+    const c = document.getElementById("still").value;
+
+    let tamt =(c*100) + (d*10) +(b*15);
+    
+    
+    document.getElementById("tamt").value=tamt;
+    
+}
+
+</script>
+</body>
+
+
+</html>
