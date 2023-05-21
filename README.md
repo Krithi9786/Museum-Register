@@ -5,7 +5,7 @@ Users can register and then book the tickets for the Museum, make payments, etc.
 
 # Technologies Used:
                 Node.js
-                PHP
+                Express.js
                 MongoDB 
                 
 # Prerequisties:
